@@ -89,6 +89,9 @@
     <Compile Include="Assets\script\patk1.cs" />
     <Compile Include="Assets\script\playerchar.cs" />
     <Compile Include="Assets\script\projs.cs" />
+    <Compile Include="Assets\script\TitleGM.cs" />
+    <Compile Include="Assets\script\trap.cs" />
+    <Compile Include="Assets\script\traphit.cs" />
     <Compile Include="Assets\script\ustat.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -146,7 +146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &196782140
 GameObject:
@@ -210,32 +210,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &250945157
+--- !u!1 &487444354
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 250945159}
-  - component: {fileID: 250945158}
+  - component: {fileID: 487444356}
+  - component: {fileID: 487444355}
   m_Layer: 5
-  m_Name: help (1)
+  m_Name: encouragement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!132 &250945158
+--- !u!132 &487444355
 GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 250945157}
+  m_GameObject: {fileID: 487444354}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: press h
-  m_Anchor: 8
+  m_Text: 'Try to make your way through the dungeon.
+
+    Watch out for enemies and traps!'
+  m_Anchor: 3
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
@@ -243,24 +245,24 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 30
-  m_FontStyle: 1
+  m_FontStyle: 0
   m_Color:
     serializedVersion: 2
     rgba: 3824803138
   m_PixelCorrect: 1
   m_RichText: 1
---- !u!4 &250945159
+--- !u!4 &487444356
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 250945157}
+  m_GameObject: {fileID: 487444354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0.25, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &803705672
 GameObject:
@@ -333,57 +335,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &912867446
+--- !u!1 &1364574667
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 912867448}
-  - component: {fileID: 912867447}
+  - component: {fileID: 1364574669}
+  - component: {fileID: 1364574668}
   m_Layer: 5
-  m_Name: title (1)
+  m_Name: back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!132 &912867447
+--- !u!132 &1364574668
 GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 912867446}
+  m_GameObject: {fileID: 1364574667}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: press space to begin!
-  m_Anchor: 0
+  m_Text: "press backspace to go back, \nor space to start"
+  m_Anchor: 3
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 2
+  m_FontSize: 20
+  m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 3824763714
+    rgba: 3824803138
   m_PixelCorrect: 1
   m_RichText: 1
---- !u!4 &912867448
+--- !u!4 &1364574669
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 912867446}
+  m_GameObject: {fileID: 1364574667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37, y: 0.7, z: 0}
+  m_LocalPosition: {x: 0.35, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1508236361
 GameObject:
@@ -536,7 +538,7 @@ GameObject:
   - component: {fileID: 2010580361}
   - component: {fileID: 2010580360}
   m_Layer: 5
-  m_Name: help
+  m_Name: controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -550,16 +552,20 @@ GUIText:
   m_GameObject: {fileID: 2010580359}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Help
-  m_Anchor: 8
-  m_Alignment: 1
+  m_Text: 'Arrow keys: Move
+
+    Mouse: Change direction you are facing
+
+    Click: Attack'
+  m_Anchor: 3
+  m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
-  m_FontSize: 50
-  m_FontStyle: 1
+  m_FontSize: 30
+  m_FontStyle: 0
   m_Color:
     serializedVersion: 2
     rgba: 3824803138
@@ -572,9 +578,9 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2010580359}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
