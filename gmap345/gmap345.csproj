@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Assets\script\aimove.cs" />
     <Compile Include="Assets\script\atkmelee.cs" />
+    <Compile Include="Assets\script\CameraFollow.cs" />
     <Compile Include="Assets\script\enemyforward.cs" />
     <Compile Include="Assets\script\enemyleft.cs" />
     <Compile Include="Assets\script\enemypath.cs" />
