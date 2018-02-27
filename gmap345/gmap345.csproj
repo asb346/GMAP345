@@ -81,10 +81,13 @@
     <Compile Include="Assets\script\aimove.cs" />
     <Compile Include="Assets\script\atkmelee.cs" />
     <Compile Include="Assets\script\CameraFollow.cs" />
+    <Compile Include="Assets\script\EnemyChase.cs" />
     <Compile Include="Assets\script\enemyforward.cs" />
     <Compile Include="Assets\script\enemyleft.cs" />
     <Compile Include="Assets\script\enemypath.cs" />
     <Compile Include="Assets\script\enemyright.cs" />
+    <Compile Include="Assets\script\EnemyRLStrafe.cs" />
+    <Compile Include="Assets\script\EnemyUDStrafe.cs" />
     <Compile Include="Assets\script\fric.cs" />
     <Compile Include="Assets\script\meleebox.cs" />
     <Compile Include="Assets\script\patk1.cs" />
