@@ -14,10 +14,9 @@ public class projs : MonoBehaviour {
         rig.velocity= new Vector2(-1*speed * Mathf.Sin(Mathf.Deg2Rad*rig.transform.rotation.eulerAngles.z), speed * Mathf.Cos(Mathf.Deg2Rad*rig.transform.rotation.eulerAngles.z));
 
     }
-    public bool col;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        col = true;
+
         if (collision.gameObject.CompareTag("level")) {
             Destroy(this.gameObject);
         }

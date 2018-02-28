@@ -14,14 +14,14 @@ public class trap : MonoBehaviour {
 	void Update () {
 		
 	}
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
 
         if (collision.gameObject.CompareTag("player"))
         {
-            if (hit.gameObject.GetComponents<traphit>().Length > 0) {
+            if (hit.gameObject.GetComponents<traphitp>().Length > 0) {
                 hit.SetActive(true);
-                hit.GetComponent<traphit>().act();
+                hit.GetComponent<traphitp>().act();
             }
             if (onetime) {
                 Destroy(this.gameObject);
