@@ -37,5 +37,9 @@ public class playerchar : MonoBehaviour {
         jumpc -= Time.deltaTime;
     }
 
-
+    void OnCollisionEnter2D(Collision2D c)
+    {
+        if (c.gameObject.CompareTag("enemy"))
+            Destroy(this.gameObject);
+    }
 }

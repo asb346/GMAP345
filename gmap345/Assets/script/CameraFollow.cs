@@ -5,8 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
     public Transform target;
-    public float smoothTime = 0.3f;
-    public float maxSpeed = 0.3f;
+    public float speed = 2f;
 
     private bool move = true;
     private Vector3 formerposition;
@@ -25,7 +24,8 @@ public class CameraFollow : MonoBehaviour {
             goal = target.position;
             goal.z = transform.position.z;
             formerposition = transform.position;
-            transform.position = Vector3.SmoothDamp(transform.position, goal, ref velocity, smoothTime, maxSpeed, Time.deltaTime);
+            transform.GetComponent<Rigidbody2D>().velocity = (goal - transform.position) * speed;
+            //Vector3.SmoothDamp(transform.position, goal, ref velocity, smoothTime, maxSpeed, Time.deltaTime);
         }
         else
         {
