@@ -20,12 +20,10 @@ public class EnemyRLStrafe : MonoBehaviour {
     {
         if (direction==Vector2.left)
         {
-            Debug.Log("switch");
             direction = Vector2.right;
         }
         else
         {
-            Debug.Log("switch");
             direction = Vector2.left;
         }
     }

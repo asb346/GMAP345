@@ -22,12 +22,10 @@ public class EnemyUDStrafe : MonoBehaviour {
     {
         if (direction == Vector2.up)
         {
-            Debug.Log("switch");
             direction = Vector2.down;
         }
         else
         {
-            Debug.Log("switch");
             direction = Vector2.up;
         }
     }
