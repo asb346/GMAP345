@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scene2.unity
     guid: 96032a780ebe20d4580a8769952c8b0a
+  - enabled: 1
+    path: Assets/testscene.unity
+    guid: 01155f5e9bc6bdc469df68d5be197f44
