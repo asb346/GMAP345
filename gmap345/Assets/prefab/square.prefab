@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 61992965184140704}
   - component: {fileID: 114240482175259842}
   - component: {fileID: 114677395531070978}
+  - component: {fileID: 114027275484016372}
   m_Layer: 9
   m_Name: square
   m_TagString: player
@@ -91,6 +92,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0
+--- !u!114 &114027275484016372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698276986717434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3733dd3d2a3f87e49a6fed2f6a0e1dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114240482175259842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484492ed69fc73148bd65f90644eb640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friction: 3
+  friction: 2
   rig: {fileID: 50452736333234628}
 --- !u!212 &212267707737683474
 SpriteRenderer:

@@ -37,4 +37,5 @@ public class atkmelee : MonoBehaviour {
         var t = Instantiate(p, player.position, player.rotation);
         t.transform.parent = gameObject.transform;
     }
+
 }

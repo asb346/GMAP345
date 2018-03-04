@@ -17,14 +17,18 @@ public class room : MonoBehaviour {
 	}
     private void OnTriggerStay2D(Collider2D collision)
     {
-
+        if (collision.gameObject.CompareTag("wall"))
+        {
+            Debug.Log("triggered");
+            Destroy(collision.gameObject);
+        }
         if (collision.gameObject.CompareTag("player"))
         {
             DontDestroyOnLoad(collision.gameObject);
             DontDestroyOnLoad(GameObject.FindGameObjectWithTag("MainCamera"));
             collision.transform.position=newpos;
             SceneManager.LoadScene(nextscene);
-        }
-
+        }   
+ 
     }
 }

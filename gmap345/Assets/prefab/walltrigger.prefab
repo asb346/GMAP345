@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212658859835351784}
   - component: {fileID: 61615879356561874}
   - component: {fileID: 114300907208929708}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: walltrigger
-  m_TagString: Untagged
+  m_TagString: trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

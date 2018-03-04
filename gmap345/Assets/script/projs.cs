@@ -28,11 +28,7 @@ public class projs : MonoBehaviour {
             collision.GetComponent<Rigidbody2D>().AddForce(GetComponent<Rigidbody2D>().velocity*eff);
             Destroy(this.gameObject);
         }
-        if (collision.gameObject.CompareTag("box"))
-        {
-            collision.GetComponent<Rigidbody2D>().AddForce(GetComponent<Rigidbody2D>().velocity * eff);
-            Destroy(this.gameObject);
-        }
+
     }
 
     public void FixedUpdate()

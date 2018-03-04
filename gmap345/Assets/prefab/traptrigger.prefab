@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212708198404105830}
   - component: {fileID: 61238508110060294}
   - component: {fileID: 114226289811127580}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: traptrigger
-  m_TagString: Untagged
+  m_TagString: trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

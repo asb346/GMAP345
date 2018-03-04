@@ -6,6 +6,11 @@ TagManager:
   tags:
   - enemy
   - map
+  - player
+  - level
+  - wall
+  - box
+  - trigger
   layers:
   - Default
   - TransparentFX
@@ -19,7 +24,7 @@ TagManager:
   - player
   - projectiles
   - camera
-  - 
+  - trigger
   - 
   - 
   - 
@@ -51,4 +56,7 @@ TagManager:
     locked: 0
   - name: projectiles
     uniqueID: 800449763
+    locked: 0
+  - name: wall
+    uniqueID: 307336575
     locked: 0
