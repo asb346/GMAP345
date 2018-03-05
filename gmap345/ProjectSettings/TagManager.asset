@@ -60,3 +60,6 @@ TagManager:
   - name: wall
     uniqueID: 307336575
     locked: 0
+  - name: trigger
+    uniqueID: 4196146591
+    locked: 0
