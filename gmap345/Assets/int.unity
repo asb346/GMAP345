@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 330317895}
   - component: {fileID: 330317894}
   - component: {fileID: 330317899}
+  - component: {fileID: 330317900}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -174,7 +175,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -211,11 +212,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 330317893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8e20a053d20d41aa5117045e38c35, type: 3}
+  m_Script: {fileID: 11500000, guid: 7723e37c296f7884d83890a5dedcc7e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 201920486}
-  level: {fileID: 0}
+  target: {fileID: 201920486}
+  speed: 2
+--- !u!50 &330317900
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330317893}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &522581535
 Prefab:
   m_ObjectHideFlags: 0
@@ -258,7 +279,7 @@ Prefab:
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
       propertyPath: nextscene
-      value: rm6
+      value: rm1
       objectReference: {fileID: 0}
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}

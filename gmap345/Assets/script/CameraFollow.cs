@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
-    public Transform target;
+    public GameObject target;
     public float speed = 2f;
 
     private bool move = true;
@@ -17,11 +17,11 @@ public class CameraFollow : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
         Vector3 goal;
         if (move)
         {
-            goal = target.position;
+            goal = target.transform.position;
             goal.z = transform.position.z;
             formerposition = transform.position;
             transform.GetComponent<Rigidbody2D>().velocity = (goal - transform.position) * speed;
@@ -40,7 +40,7 @@ public class CameraFollow : MonoBehaviour {
     }
     void OnCollisionExit(Collision collision)
     {
-        move = true;
+       move = true;
     }
 
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerchar : MonoBehaviour {
     public float speed;
@@ -40,6 +41,9 @@ public class playerchar : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D c)
     {
         if (c.gameObject.CompareTag("enemy"))
+        {
             Destroy(this.gameObject);
+            SceneManager.LoadScene("gameover");
+        }
     }
 }

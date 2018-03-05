@@ -12,9 +12,9 @@ public class TitleGM : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene("game", LoadSceneMode.Single);
+            SceneManager.LoadScene("int", LoadSceneMode.Single);
             print("You hit space");
         }
         if (Input.GetKeyDown(KeyCode.H))
