@@ -9,7 +9,7 @@ public class movewall : MonoBehaviour {
     private Rigidbody2D rig;
     private Vector3 startpos;
     private Vector3 target;
-    public float distance;
+    private float distance;
     public bool startmove;
 	// Use this for initialization
 	void Start () {

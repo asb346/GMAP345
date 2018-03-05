@@ -258,17 +258,17 @@ Prefab:
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
       propertyPath: nextscene
-      value: rm1
+      value: rm6
       objectReference: {fileID: 0}
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
       propertyPath: newpos.x
-      value: 0.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
       propertyPath: newpos.y
-      value: 0.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4281390323882802, guid: 22618aaf29351f746a0415f527554162, type: 2}
       propertyPath: m_LocalScale.x
