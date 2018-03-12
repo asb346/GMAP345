@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114869923827968254}
   - component: {fileID: 50452736333234628}
   - component: {fileID: 61992965184140704}
-  - component: {fileID: 114240482175259842}
   - component: {fileID: 114677395531070978}
   - component: {fileID: 114027275484016372}
   m_Layer: 9
@@ -103,19 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3733dd3d2a3f87e49a6fed2f6a0e1dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114240482175259842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1698276986717434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cef66fda240cfc4d8e2a9e89530885c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  atkspd: 1
-  p: {fileID: 1491919816032032, guid: abc50ee23a8d31c4ab1f5c775c0e186e, type: 2}
 --- !u!114 &114344265403773442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439ca2ec6c26710439745491085c59c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1000
   jumpforce: 200
   jumpcd: 0.8
 --- !u!114 &114677395531070978
@@ -141,9 +127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1e16f702631724a8036b7b64eb81b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atkspd: 0.5
+  atkspd: 0.2
   p: {fileID: 1398340513852034, guid: 3890b59fbe41a1746ae1de643439bb08, type: 2}
-  delay: 0.2
+  delay: 0.1
 --- !u!114 &114869923827968254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484492ed69fc73148bd65f90644eb640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friction: 2
+  friction: 0.5
   rig: {fileID: 50452736333234628}
 --- !u!212 &212267707737683474
 SpriteRenderer:
