@@ -27,6 +27,7 @@ public class playerchar : MonoBehaviour {
         float AngleDeg = (180 / Mathf.PI) * AngleRad;
         this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
 
+        /*
         if (Input.GetKey(KeyCode.Space))
         {
             if (jumpc <= 0)
@@ -35,7 +36,8 @@ public class playerchar : MonoBehaviour {
                 jumpc = jumpcd;
             }
         }
-        jumpc -= Time.deltaTime;
+        */
+        //jumpc -= Time.deltaTime;
     }
 
     void OnCollisionEnter2D(Collision2D c)
