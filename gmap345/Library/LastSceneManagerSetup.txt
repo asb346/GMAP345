@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/rm5.unity
-=======
-- path: Assets/win.unity
->>>>>>> 842bce51e4929003d22644adf95f7da9effa2872
+- path: Assets/int.unity
   isLoaded: 1
   isActive: 1
