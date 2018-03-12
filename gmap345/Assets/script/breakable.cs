@@ -15,7 +15,7 @@ public class breakable : MonoBehaviour {
 	}
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.tag);
+        
         if (collision.gameObject.CompareTag("projectile"))
         {
             Destroy(this.gameObject);
