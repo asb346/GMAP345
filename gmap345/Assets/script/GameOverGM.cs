@@ -17,7 +17,7 @@ public class GameOverGM : MonoBehaviour {
 
     void restartgame()
     {
-        SceneManager.LoadScene("title", LoadSceneMode.Single);
+        SceneManager.LoadScene("int", LoadSceneMode.Single);
     }
     void exitgame()
     {
