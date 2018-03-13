@@ -52,6 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 1259312133208198, guid: 1f5d1b2cce7fd264286c6c7998a98b00, type: 2}
-  bg: {fileID: 1503035230616670, guid: b57c7cdfcf6223249aa3f565f8d98e5c, type: 2}
+  bg: {fileID: 1613692078442366, guid: c0fa36c8818ee0f43b2a64661b97f9e1, type: 2}
   width: 1
   height: 1
