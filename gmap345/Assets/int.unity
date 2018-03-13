@@ -108,11 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &201920486 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1698276986717434, guid: 6263f4052d19c484f9a3f6e6e3713714,
-    type: 2}
-  m_PrefabInternal: {fileID: 1267267192}
 --- !u!1 &330317893
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,7 +120,6 @@ GameObject:
   - component: {fileID: 330317896}
   - component: {fileID: 330317895}
   - component: {fileID: 330317894}
-  - component: {fileID: 330317899}
   - component: {fileID: 330317900}
   m_Layer: 0
   m_Name: Main Camera
@@ -204,19 +198,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &330317899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 330317893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7723e37c296f7884d83890a5dedcc7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 201920486}
-  speed: 2
 --- !u!50 &330317900
 Rigidbody2D:
   serializedVersion: 4
@@ -279,7 +260,7 @@ Prefab:
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
       propertyPath: nextscene
-      value: rm11
+      value: rm1
       objectReference: {fileID: 0}
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
@@ -344,17 +325,37 @@ Prefab:
     - target: {fileID: 114344265403773442, guid: 6263f4052d19c484f9a3f6e6e3713714,
         type: 2}
       propertyPath: speed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114344265403773442, guid: 6263f4052d19c484f9a3f6e6e3713714,
         type: 2}
       propertyPath: jumpforce
-      value: 200
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114344265403773442, guid: 6263f4052d19c484f9a3f6e6e3713714,
         type: 2}
       propertyPath: jumpcd
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50452736333234628, guid: 6263f4052d19c484f9a3f6e6e3713714,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 50452736333234628, guid: 6263f4052d19c484f9a3f6e6e3713714,
+        type: 2}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114869923827968254, guid: 6263f4052d19c484f9a3f6e6e3713714,
+        type: 2}
+      propertyPath: friction
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 50452736333234628, guid: 6263f4052d19c484f9a3f6e6e3713714,
+        type: 2}
+      propertyPath: m_UseAutoMass
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6263f4052d19c484f9a3f6e6e3713714, type: 2}
