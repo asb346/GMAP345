@@ -49,6 +49,15 @@ TagManager:
   - name: backgound
     uniqueID: 2215208435
     locked: 0
+  - name: bgf
+    uniqueID: 4204681453
+    locked: 0
+  - name: bgs
+    uniqueID: 1684098401
+    locked: 0
+  - name: bgc
+    uniqueID: 3993908455
+    locked: 0
   - name: player
     uniqueID: 972438725
     locked: 0
