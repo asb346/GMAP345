@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/int.unity
+- path: Assets/rm6.unity
   isLoaded: 1
   isActive: 1
