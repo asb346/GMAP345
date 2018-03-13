@@ -6,26 +6,31 @@ using UnityEngine.SceneManagement;
 public class playerchar : MonoBehaviour {
     public float speed;
     private Rigidbody2D rig;
-
+    public GameObject spr;
+    /*
     public float jumpforce;
     public float jumpcd;
     private float jumpc = 0;
+    */
     // Use this for initialization
     void Start () {
         rig = GetComponent<Rigidbody2D>();  
 	}
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Vector2 vec = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         rig.AddForce(vec * speed);
+        if (spr.transform.rotation.eulerAngles.z < 180)
+        {
 
-        Vector3 p = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
-        float AngleRad = Mathf.Atan2(p.x - rig.position.x, p.y - rig.position.y);
-        AngleRad *= -1;
-        float AngleDeg = (180 / Mathf.PI) * AngleRad;
-        this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+            GetComponent<SpriteRenderer>().flipY = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipY = false;
+        }
 
         /*
         if (Input.GetKey(KeyCode.Space))

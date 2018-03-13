@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class fric : MonoBehaviour {
     public float friction;
-    public Rigidbody2D rig;
+    private Rigidbody2D rig;
 	// Use this for initialization
 	void Start () {
         rig = GetComponent<Rigidbody2D>();

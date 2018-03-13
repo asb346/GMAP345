@@ -16,8 +16,7 @@ public class projpick : MonoBehaviour {
 	}
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-
+        
         if (collision.gameObject.CompareTag("player"))
         {
             if (collision.gameObject.GetComponents<patk1>().Length > 0)
@@ -25,8 +24,8 @@ public class projpick : MonoBehaviour {
                
             }
             else {
-                collision.gameObject.AddComponent<patk1>();
-                var p = collision.GetComponent<patk1>();
+                collision.gameObject.GetComponent<playerchar>().spr.gameObject.AddComponent<patk1>();
+                var p = collision.gameObject.GetComponent<playerchar>().spr.gameObject.GetComponent<patk1>();
                 p.p = proj;
                 p.atkspd = attackspeed;
             }
