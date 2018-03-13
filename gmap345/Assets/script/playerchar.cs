@@ -22,7 +22,7 @@ public class playerchar : MonoBehaviour {
     {
         Vector2 vec = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         rig.AddForce(vec * speed);
-        if (spr.transform.rotation.eulerAngles.z < 180)
+        if (spr.transform.rotation.eulerAngles.z > 180)
         {
 
             GetComponent<SpriteRenderer>().flipY = true;
