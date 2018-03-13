@@ -117,11 +117,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4620813433420368, guid: b49aaa2b7e93854458da0d9fec1eafc5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.4
+      value: 7.75
       objectReference: {fileID: 0}
     - target: {fileID: 4620813433420368, guid: b49aaa2b7e93854458da0d9fec1eafc5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.88
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4620813433420368, guid: b49aaa2b7e93854458da0d9fec1eafc5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -236,7 +236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &474038757
 AudioListener:
   m_ObjectHideFlags: 0
@@ -381,11 +381,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4620813433420368, guid: b49aaa2b7e93854458da0d9fec1eafc5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.88
+      value: 4.75
       objectReference: {fileID: 0}
     - target: {fileID: 4620813433420368, guid: b49aaa2b7e93854458da0d9fec1eafc5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.09
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4620813433420368, guid: b49aaa2b7e93854458da0d9fec1eafc5, type: 2}
       propertyPath: m_LocalPosition.z

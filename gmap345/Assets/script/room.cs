@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class room : MonoBehaviour {
     [SerializeField] string nextscene;
     public Vector3 newpos;
+
+    public CameraFollow camFollow;
+
 	// Use this for initialization
 	void Start () {
-		
+        camFollow = FindObjectOfType<CameraFollow>();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +30,7 @@ public class room : MonoBehaviour {
             DontDestroyOnLoad(collision.gameObject);
             DontDestroyOnLoad(GameObject.FindGameObjectWithTag("MainCamera"));
             collision.transform.position=newpos;
+            camFollow.joinplayer();
             SceneManager.LoadScene(nextscene);
         }   
  

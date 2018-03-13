@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50986456464646520}
   - component: {fileID: 58272811284954524}
   - component: {fileID: 114273335246932930}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: enemyRL
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   direction: {x: -1, y: 0}
+  rb: {fileID: 0}
 --- !u!212 &212687417472894616
 SpriteRenderer:
   m_ObjectHideFlags: 1

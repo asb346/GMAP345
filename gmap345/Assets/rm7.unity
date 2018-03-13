@@ -195,7 +195,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4135348082615982, guid: 3bfd129ff98152c4e8dd9d2cbe4b4de3, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114273335246932930, guid: 3bfd129ff98152c4e8dd9d2cbe4b4de3,
         type: 2}
@@ -247,7 +247,7 @@ Prefab:
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
       propertyPath: nextscene
-      value: 11
+      value: rm11
       objectReference: {fileID: 0}
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
@@ -325,7 +325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &418352656
 AudioListener:
   m_ObjectHideFlags: 0
@@ -389,12 +389,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 418352655}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &812850259
 Prefab:

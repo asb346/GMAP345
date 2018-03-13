@@ -34,6 +34,11 @@ public class CameraFollow : MonoBehaviour {
         }
     }
 
+    public void joinplayer()
+    {
+        transform.position = target.transform.position + new Vector3(0,0,-10);
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         move = false;
