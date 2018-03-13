@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/rm10.unity
+=======
+- path: Assets/int.unity
+>>>>>>> 4fdbe5bc60fe634972e8a8140c5147d93d2e7f28
   isLoaded: 1
   isActive: 1
