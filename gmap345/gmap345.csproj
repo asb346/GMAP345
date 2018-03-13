@@ -83,6 +83,7 @@
     <Compile Include="Assets\script\breakable.cs" />
     <Compile Include="Assets\script\CameraFollow.cs" />
     <Compile Include="Assets\script\cameramove.cs" />
+    <Compile Include="Assets\script\ControlGM.cs" />
     <Compile Include="Assets\script\doorlock.cs" />
     <Compile Include="Assets\script\EnemyChase.cs" />
     <Compile Include="Assets\script\EnemyDeath.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets\script\EnemyRLStrafe.cs" />
     <Compile Include="Assets\script\EnemyUDStrafe.cs" />
     <Compile Include="Assets\script\fric.cs" />
+    <Compile Include="Assets\script\GameOverGM.cs" />
     <Compile Include="Assets\script\keys.cs" />
     <Compile Include="Assets\script\keytrigger.cs" />
     <Compile Include="Assets\script\meleebox.cs" />

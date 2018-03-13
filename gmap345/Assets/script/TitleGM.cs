@@ -1,31 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class TitleGM : MonoBehaviour {
 
+    public Button startButton;
+    public Button helpButton;
+    public Button creditsButton;
+
 	// Use this for initialization
 	void Start () {
-		
+        startButton.onClick.AddListener(startgame);
+        helpButton.onClick.AddListener(loadhelp);
 	}
 	
+
+    void startgame()
+    {
+        SceneManager.LoadScene("int", LoadSceneMode.Single);
+    }
+
+    void loadhelp()
+    {
+        SceneManager.LoadScene("help", LoadSceneMode.Single);
+    }
+
+
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
-        {
-            SceneManager.LoadScene("int", LoadSceneMode.Single);
-            print("You hit space");
-        }
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            SceneManager.LoadScene("help", LoadSceneMode.Single);
-            print("You hit h");
-        }
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            SceneManager.LoadScene("title", LoadSceneMode.Single);
-            print("You hit backspace");
-        }
     }
 }
