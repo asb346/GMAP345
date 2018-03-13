@@ -18,6 +18,10 @@ public class CameraFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
+        if (target == null)
+        {
+            Destroy(this.gameObject);
+        }
         Vector3 goal;
         if (move)
         {
@@ -32,6 +36,7 @@ public class CameraFollow : MonoBehaviour {
             velocity = Vector3.zero;
             transform.position = formerposition;
         }
+
     }
 
     public void joinplayer()
