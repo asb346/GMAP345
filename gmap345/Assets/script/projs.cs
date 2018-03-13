@@ -16,8 +16,8 @@ public class projs : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.gameObject.CompareTag("level")) {
+        Debug.Log(collision.tag);
+        if (collision.gameObject.CompareTag("wall")) {
             Destroy(this.gameObject);
         }
         if (collision.gameObject.CompareTag("enemy"))

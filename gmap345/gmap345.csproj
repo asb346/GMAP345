@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Assets\script\aimove.cs" />
     <Compile Include="Assets\script\atkmelee.cs" />
+    <Compile Include="Assets\script\breakable.cs" />
     <Compile Include="Assets\script\CameraFollow.cs" />
     <Compile Include="Assets\script\cameramove.cs" />
     <Compile Include="Assets\script\doorlock.cs" />
