@@ -5,7 +5,7 @@ public class AudioPlayer : MonoBehaviour {
 
 	void Awake ()
     {
-    	GameObject[] objs = GameObject.FindGameObjectsWithTag("Audio Source");
+    	GameObject[] objs = GameObject.FindGameObjectsWithTag("audio");
         if (objs.Length > 1)
             Destroy(this.gameObject);
 
