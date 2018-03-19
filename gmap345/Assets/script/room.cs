@@ -13,10 +13,10 @@ public class room : MonoBehaviour {
 	void Start () {
         camFollow = FindObjectOfType<CameraFollow>();
 	}
-
+	
 	// Update is called once per frame
 	void Update () {
-
+		
 	}
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -29,11 +29,10 @@ public class room : MonoBehaviour {
         {
             DontDestroyOnLoad(collision.gameObject);
             DontDestroyOnLoad(GameObject.FindGameObjectWithTag("MainCamera"));
-            DontDestroyOnLoad(GameObject.FindGameObjectWithTag("audio"));
             collision.transform.position=newpos;
             camFollow.joinplayer();
             SceneManager.LoadScene(nextscene);
-        }
-
+        }   
+ 
     }
 }

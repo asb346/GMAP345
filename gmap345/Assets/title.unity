@@ -810,11 +810,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1001 &1586304387
-=======
---- !u!1001 &1859689697
->>>>>>> 09ad4a74a85acf4baa1212f0bb7fac6658c51565
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -853,7 +849,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 82437620650878188, guid: 89b5e0821d06544efb7bec89e9eed8ec,
         type: 2}
       propertyPath: BypassListenerEffects
@@ -863,8 +858,6 @@ Prefab:
       propertyPath: m_TagString
       value: Audio Source
       objectReference: {fileID: 0}
-=======
->>>>>>> 09ad4a74a85acf4baa1212f0bb7fac6658c51565
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
   m_IsPrefabParent: 0

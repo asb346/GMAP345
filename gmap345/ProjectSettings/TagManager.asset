@@ -12,11 +12,7 @@ TagManager:
   - box
   - trigger
   - projectile
-<<<<<<< HEAD
   - Audio Source
-=======
-  - audio
->>>>>>> 09ad4a74a85acf4baa1212f0bb7fac6658c51565
   layers:
   - Default
   - TransparentFX
