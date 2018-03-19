@@ -464,7 +464,7 @@ Prefab:
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
       propertyPath: newpos.y
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
@@ -474,7 +474,7 @@ Prefab:
     - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
         type: 2}
       propertyPath: newpos.x
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22618aaf29351f746a0415f527554162, type: 2}
