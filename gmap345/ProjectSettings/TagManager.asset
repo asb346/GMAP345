@@ -12,6 +12,7 @@ TagManager:
   - box
   - trigger
   - projectile
+  - audio
   layers:
   - Default
   - TransparentFX
