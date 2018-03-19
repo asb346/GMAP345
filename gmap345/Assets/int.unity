@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 330317894}
   - component: {fileID: 330317900}
   - component: {fileID: 330317899}
+  - component: {fileID: 330317901}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -237,6 +238,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &330317901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330317893}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e084fc3519cc84894296992c14284d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 0}
+  shakeDuration: 0.1
+  shakeAmount: 0.05
+  decreaseFactor: 1
 --- !u!1001 &522581535
 Prefab:
   m_ObjectHideFlags: 0
@@ -408,6 +424,7 @@ MonoBehaviour:
   atkspd: 0.3
   p: {fileID: 1398340513852034, guid: 3890b59fbe41a1746ae1de643439bb08, type: 2}
   delay: 0.1
+  camShake: {fileID: 0}
 --- !u!114 &1386629788
 MonoBehaviour:
   m_ObjectHideFlags: 0

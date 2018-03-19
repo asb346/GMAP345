@@ -9,9 +9,12 @@ public class EnemyChase : MonoBehaviour {
     public float thresholdDistance = 1000;
     private float range;
 
+    public CameraShake camShake;
+
     private void Start()
     {
         target = GameObject.FindGameObjectWithTag("player");
+        camShake = FindObjectOfType<CameraShake>();
     }
     void Update()
     {
@@ -27,6 +30,7 @@ public class EnemyChase : MonoBehaviour {
     {
         if (!collision.gameObject.CompareTag("wall"))
         {
+            camShake.shakeAmount = .2f;
             Destroy(this.gameObject);
         }
     }

@@ -9,11 +9,14 @@ public class atkmelee : MonoBehaviour {
     public float delay;
     private float delayc;
     private Transform player;
+
+    public CameraShake camShake;
     // Use this for initialization
     void Start(){
         cd = 0;
         delayc = -3;
         player = GetComponent<Transform>();
+        camShake = FindObjectOfType<CameraShake>();
     }
 
     // Update is called once per frame
@@ -36,6 +39,7 @@ public class atkmelee : MonoBehaviour {
     {
         var t = Instantiate(p, player.position, player.rotation);
         t.transform.parent = gameObject.transform;
+        camShake.enabled = !camShake.enabled;
     }
 
 }
