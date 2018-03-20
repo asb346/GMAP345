@@ -23,7 +23,11 @@ public class projs : MonoBehaviour {
             Destroy(this.gameObject);
 
         }
-      
+        if (collision.gameObject.CompareTag("wall"))
+        {
+            Destroy(this.gameObject);
+
+        }
         if (collision.gameObject.CompareTag("enemy"))
         {
 
