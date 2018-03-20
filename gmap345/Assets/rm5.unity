@@ -601,6 +601,11 @@ Prefab:
       propertyPath: m_Name
       value: room (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
+        type: 2}
+      propertyPath: nextscene
+      value: rm12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22618aaf29351f746a0415f527554162, type: 2}
   m_IsPrefabParent: 0
