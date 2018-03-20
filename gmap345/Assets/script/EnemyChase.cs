@@ -53,7 +53,7 @@ public class EnemyChase : MonoBehaviour {
             audioSource.PlayOneShot(clip_death);
 
             camShake.shakeAmount = .2f;
-            flag = true;
+            Destroy(this.gameObject);
         }
     }
 }
