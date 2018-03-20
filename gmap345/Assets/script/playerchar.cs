@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class playerchar : MonoBehaviour {
     public float speed;
     private Rigidbody2D rig;
+    private AudioSource aud;
     public GameObject spr;
     /*
     public float jumpforce;
@@ -14,13 +15,18 @@ public class playerchar : MonoBehaviour {
     */
     // Use this for initialization
     void Start () {
-        rig = GetComponent<Rigidbody2D>();  
+        rig = GetComponent<Rigidbody2D>();
+        aud = GetComponent<AudioSource>();
+        aud.volume = 0.25f;
 	}
 
     // Update is called once per frame
     void Update()
     {
         Vector2 vec = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if (vec != new Vector2(0, 0) && (!aud.isPlaying)) {
+            aud.Play((int)(44100 * 0.25f));
+        }
         rig.AddForce(vec * speed);
         if (spr.transform.rotation.eulerAngles.z > 180)
         {

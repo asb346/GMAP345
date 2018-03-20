@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class meleebox : MonoBehaviour {
     private Rigidbody2D rig;
+    private AudioSource audioSource;
     public float duration;
     public float offset;
     public int damage;
     public float eff;
     private float t;
+
     // Use this for initialization
     public void Start()
     {
         duration += Time.time;
         rig = GetComponent<Rigidbody2D>();
         rig.transform.Translate(0,offset, 0);
+        audioSource = GetComponent<AudioSource>();
     }
     private bool col;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,6 +28,7 @@ public class meleebox : MonoBehaviour {
         {
             if (collision.gameObject.GetComponents<ustat>().Length > 0)
             {
+                audioSource.Play();
                 collision.gameObject.GetComponent<ustat>().damage(damage);
             }
             collision.GetComponent<Rigidbody2D>().AddForce(GetComponent<Rigidbody2D>().velocity * eff);
