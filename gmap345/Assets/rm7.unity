@@ -743,6 +743,11 @@ Prefab:
       propertyPath: newpos.x
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 114572566751637534, guid: 22618aaf29351f746a0415f527554162,
+        type: 2}
+      propertyPath: nextscene
+      value: rm6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22618aaf29351f746a0415f527554162, type: 2}
   m_IsPrefabParent: 0
