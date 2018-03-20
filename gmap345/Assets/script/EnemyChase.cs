@@ -10,18 +10,31 @@ public class EnemyChase : MonoBehaviour {
     private float range;
 
     public CameraShake camShake;
+    private AudioSource audioSource;
+    public AudioClip clip_movement;
+    public AudioClip clip_death;
 
     private void Start()
     {
         target = GameObject.FindGameObjectWithTag("player");
         camShake = FindObjectOfType<CameraShake>();
+
+        /* Audio stuff */
+        audioSource = GetComponent<AudioSource>();
+        // audioSource.volume = 0.15f;
+
     }
+
+
     void Update()
     {
         range = Vector2.Distance(transform.position, target.transform.position);
 
         if (range < thresholdDistance)
         {
+            if (!audioSource.isPlaying) {
+                audioSource.PlayOneShot(clip_movement);
+            }
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         }
     }
@@ -30,8 +43,14 @@ public class EnemyChase : MonoBehaviour {
     {
         if (!collision.gameObject.CompareTag("wall"))
         {
+            audioSource.Stop();
+            audioSource.PlayOneShot(clip_death);
+
             camShake.shakeAmount = .2f;
-            Destroy(this.gameObject);
+
+            while (audioSource.isPlaying) {
+                Destroy(this.gameObject);
+            }
         }
     }
 }

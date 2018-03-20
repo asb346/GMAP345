@@ -10,6 +10,7 @@ public class TitleGM : MonoBehaviour {
     public Button helpButton;
     public Button creditsButton;
     public AudioSource audioSource;
+    public AudioClip newClip;
     public float  finalVolume;
 
 	// Use this for initialization
@@ -22,6 +23,9 @@ public class TitleGM : MonoBehaviour {
     void startgame()
     {
         audioSource.volume = finalVolume;
+        audioSource.clip = newClip;
+        audioSource.Stop();
+        audioSource.Play();
         SceneManager.LoadScene("int", LoadSceneMode.Single);
     }
 
