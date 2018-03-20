@@ -23,8 +23,12 @@ GameObject:
   - component: {fileID: 50760814655471622}
   - component: {fileID: 58768782554692064}
   - component: {fileID: 114588677620549178}
+<<<<<<< HEAD
+  m_Layer: 14
+=======
   - component: {fileID: 114102507583124144}
   m_Layer: 0
+>>>>>>> 6fb9e31ad6af1d1e5c3bc10b34c8aa91648a3f28
   m_Name: enemylunge
   m_TagString: enemy
   m_Icon: {fileID: 0}
