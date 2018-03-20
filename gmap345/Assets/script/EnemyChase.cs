@@ -8,7 +8,7 @@ public class EnemyChase : MonoBehaviour {
     public float speed = 2f;
     public float thresholdDistance = 1000;
     private float range;
-    private bool flag = false;
+
     public CameraShake camShake;
     private AudioSource audioSource;
     public AudioClip clip_movement;
@@ -28,20 +28,14 @@ public class EnemyChase : MonoBehaviour {
 
     void Update()
     {
-        if(!flag) {
-            range = Vector2.Distance(transform.position, target.transform.position);
+        range = Vector2.Distance(transform.position, target.transform.position);
 
-            if (range < thresholdDistance)
-            {
-                if (!audioSource.isPlaying) {
-                    audioSource.PlayOneShot(clip_movement);
-                }
-                transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-            }
-        } else {
+        if (range < thresholdDistance)
+        {
             if (!audioSource.isPlaying) {
-                Destroy(this.gameObject);
+                audioSource.PlayOneShot(clip_movement);
             }
+            transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         }
     }
 
@@ -53,7 +47,10 @@ public class EnemyChase : MonoBehaviour {
             audioSource.PlayOneShot(clip_death);
 
             camShake.shakeAmount = .2f;
-            flag = true;
+
+            while (audioSource.isPlaying) {
+                Destroy(this.gameObject);
+            }
         }
     }
 }

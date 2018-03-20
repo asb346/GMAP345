@@ -26,7 +26,6 @@ public class TitleGM : MonoBehaviour {
         audioSource.clip = newClip;
         audioSource.Stop();
         audioSource.Play();
-        audioSource.loop = true;
         SceneManager.LoadScene("int", LoadSceneMode.Single);
     }
 
