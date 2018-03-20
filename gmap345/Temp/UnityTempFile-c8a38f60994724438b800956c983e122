@@ -110,6 +110,7 @@
 'Assets/script/EnemyDeath.cs'
 'Assets/script/enemyforward.cs'
 'Assets/script/enemyleft.cs'
+'Assets/script/EnemyLunge.cs'
 'Assets/script/enemypath.cs'
 'Assets/script/enemyright.cs'
 'Assets/script/EnemyRLStrafe.cs'

@@ -64,6 +64,7 @@
      <Compile Include="Assets\script\EnemyDeath.cs" />
      <Compile Include="Assets\script\enemyforward.cs" />
      <Compile Include="Assets\script\enemyleft.cs" />
+     <Compile Include="Assets\script\EnemyLunge.cs" />
      <Compile Include="Assets\script\enemypath.cs" />
      <Compile Include="Assets\script\enemyright.cs" />
      <Compile Include="Assets\script\EnemyRLStrafe.cs" />
