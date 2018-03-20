@@ -138,6 +138,8 @@ MonoBehaviour:
   startButton: {fileID: 597106423}
   helpButton: {fileID: 1389121813}
   creditsButton: {fileID: 289441725}
+  audioSource: {fileID: 246898178}
+  finalVolume: 0.6
 --- !u!4 &112629185
 Transform:
   m_ObjectHideFlags: 0
@@ -213,6 +215,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &246898178 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82437620650878188, guid: 89b5e0821d06544efb7bec89e9eed8ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 1586304387}
 --- !u!1 &289441723
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +875,11 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 2f60bee5166b2b141936dd7395714e84, type: 3}
+    - target: {fileID: 82437620650878188, guid: 89b5e0821d06544efb7bec89e9eed8ec,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
   m_IsPrefabParent: 0
