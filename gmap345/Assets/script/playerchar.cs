@@ -8,16 +8,19 @@ public class playerchar : MonoBehaviour {
     private Rigidbody2D rig;
     private AudioSource aud;
     public GameObject spr;
+
     /*
     public float jumpforce;
     public float jumpcd;
     private float jumpc = 0;
     */
+
     // Use this for initialization
     void Start () {
         rig = GetComponent<Rigidbody2D>();
         aud = GetComponent<AudioSource>();
-        aud.volume = 0.25f;
+        aud.volume = 0.15f;
+
 	}
 
     // Update is called once per frame

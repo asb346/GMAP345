@@ -137,6 +137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartButton: {fileID: 694699871}
   exitButton: {fileID: 1476793365}
+  music: {fileID: 1071962562}
+  newClip: {fileID: 8300000, guid: 56e3a6b8502e54871a095f376e96bf80, type: 3}
 --- !u!4 &13708993
 Transform:
   m_ObjectHideFlags: 0
@@ -283,6 +285,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &588114336
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4503824963738400, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503824963738400, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503824963738400, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503824963738400, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503824963738400, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503824963738400, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503824963738400, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503824963738400, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 82437620650878188, guid: 89b5e0821d06544efb7bec89e9eed8ec,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 89b5e0821d06544efb7bec89e9eed8ec, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &690204261
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +627,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1071962562 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82437620650878188, guid: 89b5e0821d06544efb7bec89e9eed8ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 588114336}
 --- !u!1 &1476793363
 GameObject:
   m_ObjectHideFlags: 0
