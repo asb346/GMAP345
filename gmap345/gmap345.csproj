@@ -98,6 +98,7 @@
     <Compile Include="Assets\script\enemyright.cs" />
     <Compile Include="Assets\script\EnemyRLStrafe.cs" />
     <Compile Include="Assets\script\EnemyUDStrafe.cs" />
+    <Compile Include="Assets\script\FadeOut.cs" />
     <Compile Include="Assets\script\fric.cs" />
     <Compile Include="Assets\script\GameOverGM.cs" />
     <Compile Include="Assets\script\keys.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Assets\script\room.cs" />
     <Compile Include="Assets\script\tilegen.cs" />
     <Compile Include="Assets\script\TitleGM.cs" />
+    <Compile Include="Assets\script\ToVictory.cs" />
     <Compile Include="Assets\script\trap.cs" />
     <Compile Include="Assets\script\traphit.cs" />
     <Compile Include="Assets\script\traphitp.cs" />
