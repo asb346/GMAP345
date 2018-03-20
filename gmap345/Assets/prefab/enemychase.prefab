@@ -23,12 +23,7 @@ GameObject:
   - component: {fileID: 50375453732989028}
   - component: {fileID: 58825792292435088}
   - component: {fileID: 114025296886920450}
-<<<<<<< HEAD
-  - component: {fileID: 114698414371523878}
-  - component: {fileID: 114145925539990084}
-=======
   - component: {fileID: 82449708578491942}
->>>>>>> 9ed81982a4009c3d01c1df1dd3e2a37ed1c9cbca
   m_Layer: 0
   m_Name: enemychase
   m_TagString: enemy
@@ -179,34 +174,8 @@ MonoBehaviour:
   speed: 2
   thresholdDistance: 5
   camShake: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &114145925539990084
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1063315321868996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff5483d92ff581e4aba5757338ff02c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  p: {fileID: 0}
---- !u!114 &114698414371523878
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1063315321868996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2914d59845e259c459b3a502ef08e842, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-=======
   clip_movement: {fileID: 8300000, guid: f6708d5a35e854f06966d350f7c4eb8c, type: 3}
   clip_death: {fileID: 8300000, guid: 121d0f03cf6224c6e81b44fa39874d34, type: 3}
->>>>>>> 9ed81982a4009c3d01c1df1dd3e2a37ed1c9cbca
 --- !u!212 &212915989980593004
 SpriteRenderer:
   m_ObjectHideFlags: 1
