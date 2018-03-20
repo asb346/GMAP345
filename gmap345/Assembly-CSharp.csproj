@@ -59,9 +59,11 @@
      <Compile Include="Assets\script\cameramove.cs" />
      <Compile Include="Assets\script\CameraShake.cs" />
      <Compile Include="Assets\script\ControlGM.cs" />
+     <Compile Include="Assets\script\deatheff.cs" />
      <Compile Include="Assets\script\doorlock.cs" />
      <Compile Include="Assets\script\EnemyChase.cs" />
      <Compile Include="Assets\script\EnemyDeath.cs" />
+     <Compile Include="Assets\script\enemydeatheff.cs" />
      <Compile Include="Assets\script\enemyforward.cs" />
      <Compile Include="Assets\script\enemyleft.cs" />
      <Compile Include="Assets\script\EnemyLunge.cs" />
