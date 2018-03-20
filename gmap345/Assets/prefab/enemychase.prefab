@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 58825792292435088}
   - component: {fileID: 114025296886920450}
   - component: {fileID: 82449708578491942}
+  - component: {fileID: 114979723259685414}
   m_Layer: 0
   m_Name: enemychase
   m_TagString: enemy
@@ -146,7 +147,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -176,6 +177,18 @@ MonoBehaviour:
   camShake: {fileID: 0}
   clip_movement: {fileID: 8300000, guid: f6708d5a35e854f06966d350f7c4eb8c, type: 3}
   clip_death: {fileID: 8300000, guid: 121d0f03cf6224c6e81b44fa39874d34, type: 3}
+--- !u!114 &114979723259685414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063315321868996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff5483d92ff581e4aba5757338ff02c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: {fileID: 1619577624451076, guid: 20e489e922cfa764aabb045619ba5a7c, type: 2}
 --- !u!212 &212915989980593004
 SpriteRenderer:
   m_ObjectHideFlags: 1
