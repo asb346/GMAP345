@@ -9,14 +9,18 @@ public class TitleGM : MonoBehaviour {
     public Button startButton;
     public Button helpButton;
     public Button creditsButton;
+    public Button quitButton;
     public AudioSource audioSource;
     public AudioClip newClip;
     public float  finalVolume;
 
 	// Use this for initialization
 	void Start () {
+        audioSource = AudioSource.FindObjectOfType<AudioSource>();
         startButton.onClick.AddListener(startgame);
         helpButton.onClick.AddListener(loadhelp);
+        creditsButton.onClick.AddListener(credits);
+        quitButton.onClick.AddListener(totalquit);
 	}
 
 
@@ -33,6 +37,16 @@ public class TitleGM : MonoBehaviour {
     void loadhelp()
     {
         SceneManager.LoadScene("help", LoadSceneMode.Single);
+    }
+
+    void credits()
+    {
+        SceneManager.LoadScene("credits", LoadSceneMode.Single);
+    }
+
+    void totalquit()
+    {
+        Application.Quit();
     }
 
 

@@ -68,3 +68,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/rm12.unity
     guid: ad77ced5bd9a6ac4cab71579fd6d3223
+  - enabled: 1
+    path: Assets/credits.unity
+    guid: d62303dd549aa6b40853203283f1b4cb
